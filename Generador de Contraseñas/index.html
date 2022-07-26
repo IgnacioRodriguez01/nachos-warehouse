@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Password</title>
+
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-800">
+    <section class="flex flex-col items-center w-1/2 bg-gray-200 mx-auto mt-20 rounded-lg shadow-lg">
+        <h2 class="rounded-t-lg bg-blue-500 p-5 text-white font-bold text-2xl w-full text-center">Generador de Contraseñas</h2>
+
+
+        <div class="w-3/4 p-3 m-10 rounded border bg-gray-100 text-center">
+            <p id="resultado" class="text-xl italic text-gray-600"> Resultado
+            </p>
+        </div>
+        
+        <form class="flex flex-col items-center -center w-full">
+            <div class="flex align-center">
+                <label for="slider" id="label" class="mx-5 font-bold text-lg text-blue-900">Longitud:</label>
+                <input type="range" name="slider" id="slider" min="2" max="16">
+            </div>
+            
+            
+            <div class="flex justify-evenly m-5 font-bold w-full text-blue-700">
+                <!-- <label>Minus
+                    <input id="mayus" type="checkbox">
+                </label> -->
+                <label>Mayus
+                    <input id="mayus" type="checkbox">
+                </label>
+                <label>Números
+                    <input id="nums" type="checkbox">
+                </label>
+                <label>Símbolos
+                    <input id="simbols" type="checkbox">
+                </label>
+            </div>
+            <input type="submit" value="Generar random" class="m-5 p-2 rounded-lg bg-blue-600 text-white font-bold text-xl w-1/2">
+        </form>
+    </section>
+
+    <section class="flex flex-col items-center w-1/2 bg-gray-200 mx-auto mt-10 rounded-lg shadow-lg">
+        <h2 class="bg-blue-500 rounded-t-lg p-4 text-white font-bold text-2xl w-full text-center">Tus Contraseñas</h2>
+        
+        <form class="flex flex-col items-center w-full">
+            <input type="text" placeholder="Introduce a qué pertenece la contraseña" class=" w-3/4 p-3 mt-5 rounded border text-center text-xl italic">
+            <input type="submit" value="Guardar" class="m-5 p-2 rounded-lg bg-blue-600 text-white font-bold text-xl w-1/2 ">
+        </form>
+    </section>
+</body>
+
+<script src="js/app.js"></script>
+
+</html>
